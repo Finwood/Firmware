@@ -412,20 +412,8 @@ then
 	lsm303d start
 fi
 
-if ms5525_airspeed start
+if sdp3x_airspeed start
 then
-fi
-
-if meas_airspeed start
-then
-else
-	if ets_airspeed start
-	then
-	else
-		if ets_airspeed start -b 1
-		then
-		fi
-	fi
 fi
 
 # Wait 20 ms for sensors (because we need to wait for the HRT and work queue callbacks to fire)
